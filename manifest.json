@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "cateCSS",
+  "version": "1.0",
+
+  "description": "Custom CSS for CATE.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cateCSS@robwakefield.github.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.cate.doc.ic.ac.uk/*", "*://cate.doc.ic.ac.uk/*"],
+      "js": ["cateCSS.js"]
+    }
+  ]
+
+}
